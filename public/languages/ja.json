@@ -1,0 +1,609 @@
+{
+  "layout": {
+    "logo": { "platform": "ストリーミングプラットフォーム" },
+    "headerMenu": {
+      "login": "ログイン",
+      "register": "会員登録",
+      "profileMenu": {
+        "notifications": {
+          "heading": "通知",
+          "loading": "読み込み中...",
+          "empty": "通知はありません"
+        },
+        "successMessage": "ログアウトに成功しました",
+        "errorMessage": "ログアウト中にエラーが発生しました",
+        "channel": "マイチャンネル",
+        "dashboard": "ダッシュボード",
+        "logout": "ログアウト"
+      }
+    },
+    "search": { "placeholder": "検索" },
+    "sidebar": {
+      "header": {
+        "expand": "展開",
+        "collapse": "折りたたむ",
+        "navigation": "ナビゲーション"
+      },
+      "userNav": {
+        "home": "ホーム",
+        "categories": "カテゴリー",
+        "streams": "ライブ配信",
+        "recommended": "おすすめ"
+      },
+      "recommended": { "heading": "おすすめ" },
+      "dashboardNav": {
+        "settings": "設定",
+        "streamSettings": "配信設定",
+        "keys": "ストリームキー",
+        "chatSettings": "チャット設定",
+        "followers": "フォロワー",
+        "sponsors": "スポンサー",
+        "premium": "プレミアムプラン",
+        "transactions": "取引履歴"
+      }
+    }
+  },
+  "home": {
+    "streamsHeading": "あなたへのおすすめのチャンネル",
+    "categoriesHeading": "あなたへのおすすめのカテゴリ"
+  },
+  "categories": {
+    "heading": "カテゴリー",
+    "overview": {
+      "heading": "このカテゴリの配信"
+    }
+  },
+  "streams": {
+    "heading": "配信",
+    "searchHeading": "リクエストで検索"
+  },
+  "stream": {
+    "video": {
+      "offline": "オフライン",
+      "loading": "接続中...",
+      "player": {
+        "volume": "音量",
+        "fullscreen": {
+          "open": "全画面表示",
+          "exit": "全画面表示を終了"
+        }
+      }
+    },
+    "info": {
+      "viewers": "視聴者",
+      "offline": "オフライン"
+    },
+  "actions": {
+    "follow": {
+      "confirmUnfollowHeading": "フォロー解除",
+      "confirmUnfollowMessage": "このチャンネルからの通知は届かなくなり、フォローリストから削除されます",
+      "unfollowButton": "フォロー解除",
+      "followButton": "フォローする",
+      "successFollowMessage": "フォローに成功しました",
+      "errorFollowMessage": "フォロー中にエラーが発生しました",
+      "successUnfollowMessage": "フォロー解除に成功しました",
+      "errorUnfollowMessage": "フォロー解除中にエラーが発生しました"
+    },
+    "support": {
+      "alreadySponsor": "あなたはすでにスポンサーです",
+      "supportAuthor": "作者を支援する",
+      "perMonth": "/ 月",
+      "choose": "選択する",
+      "errorMessage": "支払い作成中にエラーが発生しました"
+    },
+    "share": {
+      "heading": "共有方法"
+    }
+  }
+  },
+  "aboutChannel": {
+    "heading": "詳細情報",
+    "followersCount": "フォロワー",
+    "noDescription": "説明はありません"
+  },
+  "chat": {
+    "heading": "チャット",
+    "unavailable": "チャットは利用できません",
+    "unavailableMessage": "オフライン中はチャットを利用できません。後で再度ご確認ください。",
+    "loading": "接続中...",
+    "info": {
+      "authRequired": "認証が必要です",
+      "chatDisabled": "チャットは無効です",
+      "premiumFollowersOnly": "スポンサー限定",
+      "followersOnly": "フォロワー限定"
+    },
+    "sendMessage": {
+      "placeholder": "メッセージを送信",
+      "emojiPlaceholder": "検索",
+      "errorMessage": "メッセージ送信中にエラーが発生しました"
+    }
+  },
+  "settings": {
+    "heading": "配信設定",
+    "thumbnail": {
+      "updateButton": "画像を更新",
+      "confirmModal": {
+        "heading": "配信サムネイルの削除",
+        "message": "配信サムネイルを削除してもよろしいですか？この操作は取り消せません。"
+      },
+      "info": "対応形式：JPG、JPEG、PNG、GIF。最大サイズ：10 MB",
+      "successUpdateMessage": "配信画像が更新されました",
+      "errorUpdateMessage": "配信画像の更新中にエラーが発生しました",
+      "successRemoveMessage": "配信画像が削除されました",
+      "errorRemoveMessage": "配信画像の削除中にエラーが発生しました"
+    },
+    "info": {
+      "titleLabel": "タイトル",
+      "titlePlaceholder": "GTA5 配信",
+      "titleDescription": "配信のタイトルを入力してください。短くて覚えやすいものが最適です。",
+      "categoryLabel": "カテゴリー",
+      "categoryPlaceholder": "カテゴリーを選択",
+      "categoryDescription": "コンテンツに合ったカテゴリーを選択してください。視聴者があなたの配信を見つけやすくなります。",
+      "submitButton": "変更を保存",
+      "successMessage": "配信設定が更新されました",
+      "errorMessage": "配信設定の更新中にエラーが発生しました"
+    }
+  },
+  "notFound": {
+    "description": "おっと、何かがうまくいかなかったようです。",
+    "backToHome": "ホームに戻る"
+  },
+  "success": {
+    "heading": "お支払いが完了しました！",
+    "details": {
+      "heading": "スポンサーシップの詳細:",
+      "price": "価格:",
+      "duration": "期間:",
+      "channel": "チャンネル:"
+    },
+    "congratulations": "チャンネルのプレミアムコンテンツにアクセスできるようになりました！",
+    "backToHome": "ホームに戻る",
+    "backToChannel": "チャンネルに戻る",
+    "support": "ご不明な点がございましたら、サポートまでお問い合わせください。"
+  },
+  "auth": {
+    "register": {
+      "heading": "MiroStreamへ登録",
+      "backButtonLabel": "アカウントをお持ちですか？ログイン",
+      "usernameLabel": "ユーザー名",
+      "usernameDescription": "この名前は他のユーザーに表示されます。",
+      "emailLabel": "メールアドレス",
+      "emailDescription": "アカウントに関する通知の送信に使用される場合があります。",
+      "passwordLabel": "パスワード",
+      "passwordDescription": "8文字以上で入力してください。",
+      "submitButton": "登録する",
+      "successAlertTitle": "メールを確認してください",
+      "successAlertDescription": "確認用メールを指定のメールアドレスに送信しました。",
+      "errorMessage": "アカウント作成中にエラーが発生しました"
+    },
+    "verify": {
+      "heading": "アカウント認証",
+      "successMessage": "アカウントが認証されました",
+      "errorMessage": "認証中にエラーが発生しました"
+    },
+    "login": {
+      "heading": "MiroStreamへログイン",
+      "backButtonLabel": "アカウントをお持ちでないですか？登録はこちら",
+      "loginLabel": "ログインID",
+      "loginDescription": "登録したユーザー名またはメールアドレス。",
+      "passwordLabel": "パスワード",
+      "passwordDescription": "登録時に設定したパスワード。",
+      "pinLabel": "6桁のコード",
+      "pinDescription": "認証アプリに表示されているコードを入力してください。",
+      "forgotPassword": "パスワードをお忘れですか？",
+      "submitButton": "ログイン",
+      "successMessage": "ログインに成功しました",
+      "errorMessage": "ログイン中にエラーが発生しました"
+    },
+    "resetPassword": {
+      "heading": "パスワードの再設定",
+      "backButtonLabel": "ログインに戻る",
+      "emailLabel": "メールアドレス",
+      "emailDescription": "登録時に使用したメールアドレス。",
+      "submitButton": "再設定メールを送信",
+      "successAlertTitle": "リンクを送信しました",
+      "successAlertDescription": "パスワード再設定用のリンクをメールで送信しました。",
+      "errorMessage": "パスワード再設定中にエラーが発生しました"
+    },
+    "newPassword": {
+      "heading": "新しいパスワード",
+      "backButtonLabel": "ログインに戻る",
+      "passwordLabel": "新しいパスワード",
+      "passwordDescription": "新しいパスワードを設定してください。",
+      "passwordRepeatLabel": "パスワードの確認",
+      "passwordRepeatDescription": "確認のため、もう一度パスワードを入力してください。",
+      "submitButton": "パスワードを更新",
+      "successMessage": "パスワードが正常に変更されました",
+      "errorMessage": "新パスワードの設定中にエラーが発生しました"
+    },
+    "deactivate": {
+      "heading": "アカウントの無効化",
+      "backButtonLabel": "ダッシュボードに戻る",
+      "emailLabel": "メールアドレス",
+      "emailDescription": "登録時に使用したメールアドレス。",
+      "passwordLabel": "パスワード",
+      "passwordDescription": "現在のパスワード。",
+      "pinLabel": "6桁のコード",
+      "pinDescription": "メールで送信されたコードを入力してください。Telegram通知を設定している場合は、そちらにも送信されています。",
+      "submitButton": "無効にする",
+      "successMessage": "アカウントの無効化が完了しました",
+      "errorMessage": "無効化中にエラーが発生しました"
+    }
+  },
+  "dashboard": {
+    "settings": {
+      "header": {
+        "heading": "設定",
+        "description": "ここで各種設定を管理できます",
+        "profile": "プロフィール",
+        "account": "アカウント",
+        "appearance": "外観",
+        "notifications": "通知",
+        "sessions": "セッション"
+      },
+      "profile": {
+        "header": {
+          "heading": "プロフィール",
+          "description": "プロフィールの設定、アバターの更新、自己紹介の変更、SNSリンクの追加ができます。"
+        },
+        "avatar": {
+          "heading": "プロフィール画像",
+          "updateButton": "画像を更新",
+          "confirmModal": {
+            "heading": "画像の削除",
+            "message": "プロフィール画像を削除してもよろしいですか？"
+          },
+          "info": "対応形式: JPG, JPEG, PNG, WEBP, GIF。最大サイズ: 10MB。",
+          "successUpdateMessage": "プロフィール画像が更新されました",
+          "errorUpdateMessage": "画像の更新中にエラーが発生しました",
+          "successRemoveMessage": "プロフィール画像が削除されました",
+          "errorRemoveMessage": "画像の削除中にエラーが発生しました"
+        },
+        "info": {
+          "heading": "プロフィール設定",
+          "usernameLabel": "ユーザー名",
+          "usernamePlaceholder": "johndoe",
+          "usernameDescription": "他のユーザーに表示されるユニークなIDです。",
+          "displayNameLabel": "表示名",
+          "displayNamePlaceholder": "John Doe",
+          "displayNameDescription": "大文字・小文字を自由に設定できる表示用の名前です。",
+          "bioLabel": "自己紹介",
+          "bioPlaceholder": "プログラミングが大好きです",
+          "bioDescription": "自己紹介は300文字以内で入力してください。",
+          "submitButton": "変更を保存",
+          "successMessage": "プロフィールが更新されました",
+          "errorMessage": "プロフィールの更新中にエラーが発生しました"
+        },
+        "socialLinks": {
+          "createForm": {
+            "heading": "SNSリンク",
+            "titleLabel": "リンク名",
+            "titlePlaceholder": "YouTube",
+            "titleDescription": "リンクの表示テキスト",
+            "urlLabel": "リンクURL",
+            "urlPlaceholder": "https://github.com/...",
+            "urlDescription": "リンク先のフルURLを入力してください（例: https://github.com/...）",
+            "submitButton": "追加",
+            "successMessage": "SNSリンクが追加されました",
+            "errorMessage": "リンクの追加中にエラーが発生しました"
+          },
+          "editForm": {
+            "cancelButton": "キャンセル",
+            "submitButton": "保存",
+            "successUpdateMessage": "SNSリンクが更新されました",
+            "errorUpdateMessage": "リンクの更新中にエラーが発生しました",
+            "successRemoveMessage": "SNSリンクが削除されました",
+            "errorRemoveMessage": "リンクの削除中にエラーが発生しました"
+          },
+          "successReorderMessage": "リンクの順序を変更しました",
+          "errorReorderMessage": "順序の変更中にエラーが発生しました"
+        }
+      },
+      "account": {
+        "header": {
+          "heading": "アカウント",
+          "description": "パスワードの変更、セキュリティ、アカウントの無効化などの設定を管理します。",
+          "securityHeading": "セキュリティ",
+          "securityDescription": "データの保護を強化するために、2要素認証を設定します。",
+          "deactivationHeading": "アカウントの停止",
+          "deactivationDescription": "アカウントを一時的または恒久的に停止したい場合は、このオプションを使用してください。注意事項を必ず確認してください。"
+        },
+        "email": {
+          "heading": "メールアドレス",
+          "emailLabel": "メールアドレス",
+          "emailDescription": "新しいメールアドレスを入力してください。",
+          "submitButton": "保存",
+          "successMessage": "メールアドレスが更新されました",
+          "errorMessage": "メールアドレスの更新中にエラーが発生しました"
+        },
+        "password": {
+          "heading": "アカウントパスワード",
+          "oldPasswordLabel": "現在のパスワード",
+          "oldPasswordDescription": "パスワードを変更する前に、本人確認のため現在のパスワードを入力してください。",
+          "newPasswordLabel": "新しいパスワード",
+          "newPasswordDescription": "新しいパスワードは8文字以上である必要があります。",
+          "submitButton": "保存",
+          "successMessage": "パスワードが更新されました",
+          "errorMessage": "パスワードの更新中にエラーが発生しました"
+        },
+        "twoFactor": {
+          "heading": "TOTP認証",
+          "description": "TOTPを有効にして、アカウントのセキュリティを強化します。",
+          "enable": {
+            "trigger": "有効にする",
+            "heading": "TOTPを有効化",
+            "qrInstructions": "QRコードをスキャンしてTOTPを追加してください",
+            "secretCodeLabel": "シークレットコード: ",
+            "pinLabel": "認証コード",
+            "pinDescription": "6桁のコードを入力してください。",
+            "submitButton": "認証する",
+            "successMessage": "TOTP認証が有効になりました",
+            "errorMessage": "コードの認証に失敗しました"
+          },
+          "disable": {
+            "trigger": "無効にする",
+            "heading": "TOTP認証を無効にしますか？",
+            "message": "アカウントのセキュリティが低下します。",
+            "successMessage": "TOTP認証が無効になりました",
+            "errorMessage": "無効化中にエラーが発生しました"
+          }
+        },
+        "deactivation": {
+          "heading": "アカウントの無効化",
+          "description": "7日後にアカウントが完全に削除されます。",
+          "confirmModal": {
+            "heading": "無効化の確認",
+            "message": "本当によろしいですか？7日以内であればアクセスを復元できます。"
+          },
+          "deactivateButton": "無効化する"
+        }
+      },
+      "appearance": {
+        "header": {
+          "heading": "外観",
+          "description": "インターフェースを自分好みにカスタマイズします。テーマと言語を選択して、より快適に利用しましょう。"
+        },
+        "theme": {
+          "heading": "テーマの変更",
+          "description": "ダークテーマまたはライトテーマを選択できます",
+          "successMessage": "テーマが正常に変更されました"
+        },
+        "language": {
+          "heading": "言語設定",
+          "description": "サイトで使用する言語を選択してください",
+          "selectPlaceholder": "言語を選択",
+          "successMessage": "言語が正常に変更されました"
+        },
+        "color": {
+          "heading": "アクセントカラー",
+          "description": "インターフェースのアクセントカラーを選択してください"
+        }
+      },
+      "notifications": {
+        "header": {
+          "heading": "通知",
+          "description": "MiroStream からの通知の受け取り方を設定します。購読しているチャンネルの放送開始や、新しいフォロワーに関する通知を受け取ることができます。"
+        },
+        "siteNotifications": {
+          "heading": "サイト内通知",
+          "description": "サイト内通知をオフにすると、チャンネルの新しいフォロワーや新しい放送に関する通知を受け取ることができなくなります。"
+        },
+        "telegramNotifications": {
+          "heading": "Telegram 通知",
+          "description": "Telegram 通知を有効にすると、MiroStream アカウントが Telegram アカウントと連携され、新しい購読、新しいストリーム、パスワードのリセット、および 2 要素認証コードに関するメッセージを受け取ることができます。"
+        },
+        "successMessage": "通知設定が正常に更新されました",
+        "errorMessage": "通知設定の更新中にエラーが発生しました"
+      },
+      "sessions": {
+        "header": {
+            "heading": "セッション",
+            "description": "セッションとは、MiroStreamアカウントへのログインに使用されているデバイスのことです。現在アクティブなセッションが表示されます。"
+        },
+        "info": {
+            "current": "現在のセッション",
+            "active": "アクティブなセッション",
+            "notFound": "アクティブなセッションは見つかりませんでした"
+        },
+        "sessionItem": {
+            "deleteButton": "削除",
+            "details": "詳細",
+            "confirmModal": {
+                "heading": "セッションの削除",
+                "message": "このセッションを削除してもよろしいですか？この操作により、このデバイスからログアウトされ、関連するすべてのアクティビティが終了します。"
+            },
+            "successMessage": "セッションを削除しました",
+            "errorMessage": "セッションの削除に失敗しました"
+        },
+        "sessionModal": {
+            "heading": "セッション情報",
+            "device": "デバイス:",
+            "location": "場所:",
+            "ipAddress": "IPアドレス:",
+            "createdAt": "作成日:"
+        }
+      }
+    },
+    "keys": {
+        "header": {
+          "heading": "ストリームキー",
+          "description": "配信用のURLとキーを生成します。"
+        },
+        "url": {
+          "heading": "URL"
+        },
+        "key": {
+          "heading": "ストリームキー"
+        },
+        "instructionModal": {
+          "trigger": "手順",
+          "heading": "🛠 ライブ配信のためのOBS設定ガイド",
+          "description": "コンテンツの配信を開始するには、OBS Studioの接続設定を行ってください。わずか数ステップで配信準備が整います！",
+          "step1Title": "🔑 ステップ 1: OBS Studioのダウンロードと配信情報の取得",
+          "step1Description": "配信を開始するには、「サーバーURL」と「ストリームキー」の2つが必要です。以下の手順に従ってください：",
+          "downloadObs": "OBS Studioをダウンロード",
+          "downloadObsDescription": "設定を始める前に、プログラムをダウンロードしてインストールしてください。",
+          "obsLinkText": "OBS Studio",
+          "copyKeys": "サーバーURLとストリームキーをコピー",
+          "copyKeysDescription": "生成後、画面に「サーバーURL」と「ストリームキー」が表示されます。各フィールドの横にあるコピーアイコンをクリックして保存してください。",
+          "step2Title": "🎲 ステップ 2: OBS Studioの設定",
+          "step2Description": "必要なデータが揃ったら、配信のためにOBSを設定しましょう：",
+          "openObs": "OBS Studioを開く",
+          "openObsDescription": "まだインストールしていない場合は、公式サイトからダウンロードしてください。起動するとメイン画面が表示されます。",
+          "openStreamSettings": "配信設定を開く",
+          "openStreamSettingsDescription": "上部メニューの「ファイル」→「設定」をクリックし、「配信」タブに移動します。",
+          "enterDetails": "情報を入力",
+          "enterDetailsDescription": "「サービス」で「カスタム...」を選択します。「サーバー」にコピーしたURLを、「ストリームキー」にストリームキーを貼り付けます。",
+          "saveSettings": "設定を保存",
+          "saveSettingsDescription": "「適用」をクリックし、「OK」を押して変更を保存します。",
+          "step3Title": "🚀 ステップ 3: 配信開始",
+          "step3Description": "設定が完了したら、いよいよライブ配信の開始です：",
+          "startStream": "配信を開始",
+          "startStreamDescription": "OBSのメイン画面に戻り、「配信開始」ボタンをクリックします。",
+          "monitorStream": "配信を確認",
+          "monitorStreamDescription": "配信がリアルタイムで開始されます。プラットフォームとOBSの両方で確認できます。",
+          "congrats": "✨ おめでとうございます！当プラットフォームでの配信設定が完了しました。リスナーがあなたの新しいコンテンツを楽しみに待っています！ 🎉",
+          "close": "閉じる"
+        },
+        "createModal": {
+          "trigger": "キーを生成",
+          "heading": "キーを生成",
+          "ingressTypeLabel": "接続タイプ",
+          "ingressTypeDescription": "標準的な配信にはRTMPを、WebRTC接続にはWHIPを選択してください。",
+          "ingressTypePlaceholder": "接続タイプを選択してください",
+          "submitButton": "生成する",
+          "successMessage": "ストリーム接続が作成されました",
+          "errorMessage": "ストリーム接続の作成中にエラーが発生しました"
+        }
+      },
+    "chat": {
+      "header": {
+        "heading": "チャット設定",
+        "description": "ここでチャットの設定を管理できます。"
+      },
+      "isChatEnabled": {
+        "heading": "チャットを有効にする",
+        "description": "チャットを有効にすると、配信中に視聴者がメッセージを送信できるようになります。"
+      },
+      "isChatFollowersOnly": {
+        "heading": "フォロワー限定チャット",
+        "description": "この設定を有効にすると、フォロワーのみがチャットでメッセージを送信できるようになります。"
+      },
+      "isChatPremiumFollowersOnly": {
+        "heading": "プレミアムフォロワー限定チャット",
+        "description": "この設定を有効にすると、プレミアムフォロワーのみがチャットでメッセージを送信できるようになります。"
+      },
+      "successMessage": "チャット設定が正常に更新されました",
+      "errorMessage": "チャット設定の更新中にエラーが発生しました"
+    },
+    "followers": {
+      "header": {
+          "heading": "フォロワー",
+          "description": "フォロワーの一覧です。"
+      },
+      "columns": {
+          "date": "日付",
+          "user": "ユーザー",
+          "actions": "操作",
+          "viewChannel": "チャンネルを見る"
+      }
+    },
+    "sponsors": {
+      "header": {
+        "heading": "スポンサー",
+        "description": "ここではすべてのスポンサーのリストが表示されます。"
+      },
+      "columns": {
+        "date": "有効期限",
+        "user": "ユーザー",
+        "plan": "プラン",
+        "actions": "操作",
+        "viewChannel": "チャンネルへ移動"
+      }
+    },
+    "plans": {
+      "header": {
+        "heading": "プレミアムプラン",
+        "description": "あなたのチャンネルのプレミアムプラン一覧が表示されます。"
+      },
+      "alert": {
+        "heading": "チャンネル認証が必要です",
+        "description": "プレミアムプランを作成するには、チャンネルの認証が必要です。チェックマークを取得してこの機能を解放するには、最低10人の登録者が必要です。"
+      },
+      "createForm": {
+        "trigger": "プランを作成",
+        "heading": "プランを作成",
+        "titleLabel": "タイトル",
+        "titlePlaceholder": "チャンネルのプレミアムサブスクリプション",
+        "titleDescription": "プラン名を入力してください。この名前は購読者に表示されます。",
+        "descriptionLabel": "説明",
+        "descriptionPlaceholder": "プランの内容を記入してください",
+        "descriptionDescription": "プランの内容を記入してください。これにより、購読者が特典を理解しやすくなります。",
+        "priceLabel": "価格",
+        "priceDescription": "通貨でプランの価格を指定してください。これはユーザーが購読のために支払う金額です。",
+        "submitButton": "作成",
+        "successMessage": "プレミアムプランが作成されました",
+        "errorMessage": "プランの作成中にエラーが発生しました"
+      },
+      "columns": {
+        "date": "作成日",
+        "title": "ユーザー",
+        "price": "価格",
+        "actions": "操作",
+        "remove": "削除",
+        "successMessage": "プランを正常に削除しました",
+        "removeMessage": "プランの削除中にエラーが発生しました"
+      }
+    },
+    "transactions": {
+      "header": {
+        "heading": "取引",
+        "description": "ここでは、チャンネルメンバーシップに関連する取引が表示されます。"
+      },
+      "columns": {
+        "date": "作成日",
+        "status": "ステータス",
+        "success": "成功",
+        "pending": "保留中",
+        "failed": "失敗",
+        "expired": "期限切れ",
+        "amount": "金額"
+      }
+    }
+  },
+  "components": {
+    "liveBadge": { "text": "ライブ中" },
+    "confirmModal": {
+      "cancel": "キャンセル",
+      "continue": "続行"
+    },
+    "copyButton": {
+      "successMessage": "コピーしました"
+    },
+    "dataTable": {
+      "notFound": "何も見つかりませんでした"
+    },
+    "emptyState": {
+      "heading": "検索結果が見つかりませんでした",
+      "text": "サイトの隅々まで探しましたが、ご指定の条件に一致するものは見つかりませんでした。別のキーワードで試してみませんか？"
+    }
+  },
+  "utils": {
+    "formatDate": {
+      "months": {
+        "january": "1月",
+        "february": "2月",
+        "march": "3月",
+        "april": "4月",
+        "may": "5月",
+        "june": "6月",
+        "july": "7月",
+        "august": "8月",
+        "september": "9月",
+        "october": "10月",
+        "november": "11月",
+        "december": "12月"
+      }
+    }
+  }
+}

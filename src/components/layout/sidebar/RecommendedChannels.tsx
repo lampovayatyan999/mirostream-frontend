@@ -1,0 +1,35 @@
+'use client'
+
+import { useFindRecommendedChannelsQuery } from "@/src/graphql/generated/output"
+import { useSidebar } from "@/src/hooks/useSidebar"
+import { useTranslations } from "next-intl"
+import { Separator } from "../../ui/common/Separator"
+import { ChannelItem, ChannelItemSkeleton } from "./ChannelItem"
+
+export function RecommendedChannels() {
+    const t = useTranslations('layout.sidebar.recommended')
+
+    const { isCollapsed } = useSidebar()
+
+    const { data, loading:isLoadingRecommended } = useFindRecommendedChannelsQuery()
+    const channels = data?.findRecommendedChannels ?? []
+
+
+    return <div>
+        <Separator className="mb-3" />
+        {!isCollapsed && (
+            <h2 className="text-lg mb-2 px-2 font-semibold text-(--foreground)">
+                {t('heading')}
+            </h2>
+        )}
+
+        {isLoadingRecommended ? (
+            Array.from({length:7}).map((_, index) => (
+                <ChannelItemSkeleton key={index} />
+            ))
+        ) : channels.map
+        ((channel, index) => (
+            <ChannelItem key={index} channel={channel} />
+        ))}
+    </div>
+}

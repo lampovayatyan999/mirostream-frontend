@@ -1,0 +1,618 @@
+{
+  "layout": {
+    "logo": {
+      "platform": "Streaming platform"
+    },
+    "headerMenu": {
+      "login": "Login",
+      "register": "Registration",
+      "profileMenu": {
+        "notifications": {
+          "heading": "Notifications",
+          "loading": "Loading...",
+          "empty": "You have no notifications"
+        },
+        "successMessage": "You have successfully logged out",
+        "errorMessage": "Logout error",
+        "channel": "My channel",
+        "dashboard": "Dashboard",
+        "logout": "Logout"
+      }
+    },
+    "search": {
+      "placeholder": "Search"
+    },
+    "sidebar": {
+      "header": {
+        "expand": "Expand",
+        "collapse": "Collapse",
+        "navigation": "Navigation"
+      },
+      "userNav": {
+        "home": "Home",
+        "categories": "Categories",
+        "streams": "Streams",
+        "recommended": "Recommended"
+      },
+      "recommended": {
+        "heading": "Recommended"
+      },
+      "dashboardNav": {
+        "settings": "Settings",
+        "streamSettings": "Stream settings",
+        "keys": "Stream keys",
+        "chatSettings": "Chat settings",
+        "followers": "Followers",
+        "sponsors": "Sponsors",
+        "premium": "Premium plans",
+        "transactions": "Transactions"
+      }
+    }
+  },
+  "home": {
+    "streamsHeading": "Channels you might like",
+    "categoriesHeading": "Categories you might like"
+  },
+  "categories": {
+    "heading": "Categories",
+    "overview": {
+      "heading": "Streams in this category"
+    }
+  },
+  "streams": {
+    "heading": "Streams",
+    "searchHeading": "Search by request"
+  },
+  "stream": {
+    "video": {
+      "offline": "offline",
+      "loading": "Connecting...",
+      "player": {
+        "volume": "Volume",
+        "fullscreen": {
+          "open": "Full screen",
+          "exit": "Exit full screen"
+        }
+      }
+    },
+    "info": {
+      "viewers": "viewers",
+      "offline": "Offline"
+    },
+    "actions": {
+      "follow": {
+        "confirmUnfollowHeading": "Unfollow",
+        "confirmUnfollowMessage": "You will no longer receive notifications from this channel and it will disappear from your following list",
+        "unfollowButton": "Unfollow",
+        "followButton": "Follow",
+        "successFollowMessage": "Successfully followed",
+        "errorFollowMessage": "Error following",
+        "successUnfollowMessage": "Successfully unfollowed",
+        "errorUnfollowMessage": "Error unfollowing"
+      },
+      "support": {
+        "alreadySponsor": "You are already a sponsor",
+        "supportAuthor": "Support the author",
+        "perMonth": "/ month",
+        "choose": "Select",
+        "errorMessage": "Error creating payment"
+      },
+      "share": {
+        "heading": "Share via"
+      }
+    }
+  },
+
+  "aboutChannel": {
+    "heading": "About",
+    "followersCount": "followers",
+    "noDescription": "No description provided"
+  },
+  "chat": {
+    "heading": "Chat",
+    "unavailable": "Chat unavailable",
+    "unavailableMessage": "Chat is unavailable while the channel is offline. Please check back later!",
+    "loading": "Connecting...",
+    "info": {
+      "authRequired": "Authorization required",
+      "chatDisabled": "Chat disabled",
+      "premiumFollowersOnly": "Sponsors only",
+      "followersOnly": "Followers only"
+    },
+    "sendMessage": {
+      "placeholder": "Send a message",
+      "emojiPlaceholder": "Search",
+      "errorMessage": "Error sending message"
+    }
+  },
+  "settings": {
+    "heading": "Stream Settings",
+    "thumbnail": {
+      "updateButton": "Update Image",
+      "confirmModal": {
+        "heading": "Delete Stream Thumbnail",
+        "message": "Are you sure you want to delete the stream thumbnail? This action cannot be undone."
+      },
+      "info": "Supported formats: JPG, JPEG, PNG, or GIF. Max size: 10 MB.",
+      "successUpdateMessage": "Stream image updated successfully",
+      "errorUpdateMessage": "Error updating stream image",
+      "successRemoveMessage": "Stream image removed successfully",
+      "errorRemoveMessage": "Error removing stream image"
+    },
+    "info": {
+      "titleLabel": "Title",
+      "titlePlaceholder": "GTA 5 Stream",
+      "titleDescription": "Enter a title for your stream. It should be short and catchy.",
+      "categoryLabel": "Category",
+      "categoryPlaceholder": "Select a category",
+      "categoryDescription": "Select the category that matches your content. This helps viewers find your stream more easily.",
+      "submitButton": "Save Changes",
+      "successMessage": "Stream settings updated successfully",
+      "errorMessage": "Error updating stream settings"
+    }
+  },
+  "success": {
+    "heading": "Payment completed!",
+    "details": {
+      "heading": "Sponsorship details:",
+      "price": "Price:",
+      "duration": "Duration:",
+      "channel": "Channel:"
+    },
+    "congratulations": "You now have access to the channel's premium content!",
+    "backToHome": "Back to Home",
+    "backToChannel": "Back to Channel",
+    "support": "If you have any questions, please contact support."
+  },
+  "notFound": {
+    "description": "Oops, something went wrong.",
+    "backToHome": "Go back home"
+  },
+  "auth": {
+    "register": {
+      "heading": "Register for MiroStream",
+      "backButtonLabel": "Already have an account? Log in",
+      "usernameLabel": "Username",
+      "usernameDescription": "This is the name other users will know you by.",
+      "emailLabel": "Email",
+      "emailDescription": "We may use your email to send account-related notifications.",
+      "passwordLabel": "Password",
+      "passwordDescription": "Password must be at least 8 characters long.",
+      "submitButton": "Sign Up",
+      "successAlertTitle": "Check your email",
+      "successAlertDescription": "A confirmation email has been sent to your address.",
+      "errorMessage": "Account creation failed"
+    },
+    "verify": {
+      "heading": "Account verification",
+      "successMessage": "Account verified",
+      "errorMessage": "Error while verifying"
+    },
+    "login": {
+      "heading": "Login to MiroStream",
+      "backButtonLabel": "Don't have an account? Sign up!",
+      "loginLabel": "Login",
+      "loginDescription": "Your username or email that you used during registration.",
+      "passwordLabel": "Password",
+      "passwordDescription": "The password you used during registration.",
+      "pinLabel": "6-digit code",
+      "pinDescription": "Enter the code from your authentication app.",
+      "forgotPassword": "Forgot password?",
+      "submitButton": "Login",
+      "successMessage": "You have successfully logged in",
+      "errorMessage": "Error when logging in"
+    },
+    "resetPassword": {
+      "heading": "Reset password",
+      "backButtonLabel": "Already have an account? Login",
+      "emailLabel": "Email",
+      "emailDescription": "The email address you entered during registration",
+      "submitButton": "Reset password",
+      "successAlertTitle": "Link sent",
+      "successAlertDescription": "We have sent a password reset link to your email.",
+      "errorMessage": "Error resetting password"
+    },
+    "newPassword": {
+      "heading": "New Password",
+      "backButtonLabel": "Already have an account? Login",
+      "passwordLabel": "New Password",
+      "passwordDescription": "The password you used during registration",
+      "passwordRepeatLabel": "Repeat Password",
+      "passwordRepeatDescription": "Repeat your new password to confirm",
+      "submitButton": "Reset Password",
+      "successMessage": "Password changed successfully",
+      "errorMessage": "Error while setting a new password"
+    },
+    "deactivate": {
+      "heading": "Account Deactivation",
+      "backButtonLabel": "Go to Dashboard",
+      "emailLabel": "Email",
+      "emailDescription": "The email address you used during registration",
+      "passwordLabel": "Password",
+      "passwordDescription": "The password you entered during registration",
+      "pinLabel": "6-digit code",
+      "pinDescription": "A code has been sent to your email. If you have Telegram notifications enabled, we sent the code there as well",
+      "submitButton": "Deactivate",
+      "successMessage": "Account successfully deactivated",
+      "errorMessage": "Error during deactivation"
+    }
+  },
+  "dashboard": {
+    "settings": {
+      "header": {
+        "heading": "Settings",
+        "description": "Here you can manage your settings",
+        "profile": "Profile",
+        "account": "Account",
+        "appearance": "Appearance",
+        "notifications": "Notifications",
+        "sessions": "Sessions"
+      },
+      "profile": {
+        "header": {
+          "heading": "Profile",
+          "description": "Set up your profile, update your avatar, and change your personal information."
+        },
+        "avatar": {
+          "heading": "Profile Image",
+          "updateButton": "Update profile image",
+          "confirmModal": {
+            "heading": "Delete avatar",
+            "message": "Are you sure you want to delete your profile image? This action cannot be undone."
+          },
+          "info": "Supported formats: JPG, JPEG, PNG, WEBP or GIF. Max size: 10 MB.",
+          "successUpdateMessage": "Profile image updated successfully",
+          "errorUpdateMessage": "Error updating profile image",
+          "successRemoveMessage": "Profile image removed successfully",
+          "errorRemoveMessage": "Error removing profile image"
+        },
+        "info": {
+          "heading": "Profile Settings",
+          "usernameLabel": "Username",
+          "usernamePlaceholder": "johndoe",
+          "usernameDescription": "Other users will know you by this name.",
+          "displayNameLabel": "Display Name",
+          "displayNamePlaceholder": "John Doe",
+          "displayNameDescription": "Use capital letters in your display name as you wish.",
+          "bioLabel": "Bio",
+          "bioPlaceholder": "I love programming",
+          "bioDescription": "Bio information must be no more than 300 characters.",
+          "submitButton": "Save Changes",
+          "successMessage": "Profile updated successfully",
+          "errorMessage": "Error updating profile"
+        },
+        "socialLinks": {
+          "createForm": {
+            "heading": "Social Links",
+            "titleLabel": "Link Title",
+            "titlePlaceholder": "Youtube",
+            "titleDescription": "Link text",
+            "urlLabel": "Link URL",
+            "urlPlaceholder": "https://github.com/lampovayatyan999",
+            "urlDescription": "Where does this link lead? Enter a full URL, e.g., https://github.com/lampovayatyan999",
+            "submitButton": "Add",
+            "successMessage": "Social media link added successfully",
+            "errorMessage": "Error adding social media link"
+          },
+          "editForm": {
+            "cancelButton": "Cancel",
+            "submitButton": "Save",
+            "successUpdateMessage": "Social media link updated successfully",
+            "errorUpdateMessage": "Error updating social media link",
+            "successRemoveMessage": "Social media link removed successfully",
+            "errorRemoveMessage": "Error removing social media link"
+          },
+          "successReorderMessage": "Social media link order updated",
+          "errorReorderMessage": "Error changing social media link order"
+        }
+      },
+      "account": {
+        "header": {
+          "heading": "Account",
+          "description": "Manage your account settings, including access changes, security, and deactivation options.",
+          "securityHeading": "Security",
+          "securityDescription": "Set up two-factor authentication for enhanced data protection.",
+          "deactivationHeading": "Deactivation",
+          "deactivationDescription": "Use this option if you want to temporarily or permanently disable your account. Please be aware of the consequences."
+        },
+        "email": {
+          "heading": "Email Address",
+          "emailLabel": "Email",
+          "emailDescription": "Enter your new email address.",
+          "submitButton": "Save",
+          "successMessage": "Email updated successfully",
+          "errorMessage": "Email update failed"
+        },
+        "password": {
+          "heading": "Account Password",
+          "oldPasswordLabel": "Old Password",
+          "oldPasswordDescription": "Enter your old password to verify your identity before changing your password.",
+          "newPasswordLabel": "New Password",
+          "newPasswordDescription": "Your new password must be at least 8 characters long.",
+          "submitButton": "Save",
+          "successMessage": "Password updated successfully",
+          "errorMessage": "Error during password update"
+        },
+        "twoFactor": {
+          "heading": "TOTP Authentication",
+          "description": "Increase your account security by enabling TOTP authentication.",
+          "enable": {
+            "trigger": "Enable",
+            "heading": "Enable TOTP",
+            "qrInstructions": "Scan the QR code to add TOTP",
+            "secretCodeLabel": "Secret code: ",
+            "pinLabel": "PIN code",
+            "pinDescription": "Please enter the 6-digit code provided by your authentication app.",
+            "submitButton": "Confirm",
+            "successMessage": "TOTP authentication enabled",
+            "errorMessage": "Error during code verification"
+          },
+          "disable": {
+            "trigger": "Disable",
+            "heading": "Are you sure you want to disable TOTP?",
+            "message": "Disabling TOTP authentication will make your account less secure.",
+            "successMessage": "TOTP authentication disabled",
+            "errorMessage": "Error during disabling"
+          }
+        },
+        "deactivation": {
+          "heading": "Account Deactivation",
+          "description": "After deactivating your account, the account will be completely deleted after 7 days.",
+          "confirmModal": {
+            "heading": "Confirm Deactivation",
+            "message": "Are you sure you want to deactivate your account? Access can only be restored within 7 days."
+          },
+          "deactivateButton": "Deactivate"
+        }
+      },
+      "appearance": {
+        "header": {
+          "heading": "Appearance",
+          "description": "Customize the look and feel of the site interface to your liking. Choose a theme and language to make your experience more comfortable."
+        },
+        "theme": {
+          "heading": "Change Theme",
+          "description": "You can choose a dark or light theme for the site interface",
+          "successMessage": "Site theme successfully changed"
+        },
+        "language": {
+          "heading": "Website Language",
+          "description": "Select the language to be used on the website",
+          "selectPlaceholder": "Select a language",
+          "successMessage": "Website language successfully changed"
+        },
+        "color": {
+          "heading": "Accent color",
+          "description": "Select an accent color for the interface"
+        }
+      },
+      "notifications": {
+        "header": {
+          "heading": "Notifications",
+          "description": "Configure how you want to receive notifications from MiroStream. You will receive notifications about the start of broadcasts on channels you subscribe to, as well as about new followers."
+        },
+        "siteNotifications": {
+          "heading": "Site Notifications",
+          "description": "If you turn off site notifications, you will not receive notifications about new followers to your channel or notifications about new broadcasts."
+        },
+        "telegramNotifications": {
+          "heading": "Telegram Notifications",
+          "description": "If you enable Telegram notifications, your MiroStream account will be linked to your Telegram account, and you will receive messages about new subscriptions, new streams, password resets, and two-factor authentication codes."
+        },
+        "successMessage": "Notification settings updated successfully",
+        "errorMessage": "Error updating notification settings"
+      },
+      "sessions": {
+        "header": {
+            "heading": "Sessions",
+            "description": "Sessions are devices currently or previously used to access your MiroStream account. Active sessions are shown here."
+        },
+        "info": {
+            "current": "Current session",
+            "active": "Active sessions",
+            "notFound": "No active sessions found"
+        },
+        "sessionItem": {
+            "deleteButton": "Delete",
+            "details": "Details",
+            "confirmModal": {
+                "heading": "Delete Session",
+                "message": "Are you sure you want to delete this session? This will log you out of this device and end all active processes associated with it."
+            },
+            "successMessage": "Session deleted",
+            "errorMessage": "Error deleting session"
+        },
+        "sessionModal": {
+            "heading": "Session Info",
+            "device": "Device:",
+            "location": "Location:",
+            "ipAddress": "IP Address:",
+            "createdAt": "Created At:"
+        }
+      }
+    },
+    "keys": {
+        "header": {
+          "heading": "Stream Keys",
+          "description": "Generate the URL and key to host your broadcast."
+        },
+        "url": {
+          "heading": "URL"
+        },
+        "key": {
+          "heading": "Stream Key"
+        },
+        "instructionModal": {
+          "trigger": "Instruction",
+          "heading": "🛠 OBS Setup Instructions for Live Streams",
+          "description": "To start sharing your content with your audience, follow the detailed instructions for connecting OBS Studio. It's just a few steps, and you're ready to go live!",
+          "step1Title": "🔑 Step 1: Download OBS Studio and Generate Server URL and Stream Key",
+          "step1Description": "To start broadcasting, you need to obtain two important elements: Server URL and Stream Key. Follow these steps:",
+          "downloadObs": "Download OBS Studio",
+          "downloadObsDescription": "Before setting up the broadcast, download and install the program.",
+          "obsLinkText": "OBS Studio",
+          "copyKeys": "Copy Server URL and Stream Key",
+          "copyKeysDescription": "After generation, two fields will appear on the screen: Server URL and Stream Key. Click the copy icons next to each field to save the data to your clipboard.",
+          "step2Title": "🎲 Step 2: Configure OBS Studio",
+          "step2Description": "Now that you have the necessary data, let's configure OBS for your broadcast:",
+          "openObs": "Open OBS Studio",
+          "openObsDescription": "If you don't have OBS installed yet, download it from the official site and install it. After launching, the main OBS page will open.",
+          "openStreamSettings": "Open Stream Settings",
+          "openStreamSettingsDescription": "In the top menu, click 'File' -> 'Settings'. Go to the 'Stream' tab.",
+          "enterDetails": "Enter your data",
+          "enterDetailsDescription": "In the 'Service' field, select the 'Custom...' option. Paste the previously copied Server URL into the 'URL' field. Paste your Stream Key into the 'Stream Key' field.",
+          "saveSettings": "Save Settings",
+          "saveSettingsDescription": "Click 'Apply' and then 'OK' to save the changes.",
+          "step3Title": "🚀 Step 3: Start Broadcasting",
+          "step3Description": "After successfully configuring OBS, you are ready to start your live broadcast:",
+          "startStream": "Start Streaming",
+          "startStreamDescription": "Return to the main OBS screen and click the 'Start Streaming' button.",
+          "monitorStream": "Monitor your broadcast",
+          "monitorStreamDescription": "Your broadcast will start in real-time, and you will be able to monitor it both on the platform and in OBS.",
+          "congrats": "✨ Congratulations! You have successfully set up OBS for broadcasting on our platform. Your audience is waiting for new bright moments and content! 🎉",
+          "close": "Close"
+        },
+        "createModal": {
+          "trigger": "Generate keys",
+          "heading": "Generate keys",
+          "ingressTypeLabel": "Connection Type",
+          "ingressTypeDescription": "Select RTMP for classic broadcasting or WHIP for WebRTC connections.",
+          "ingressTypePlaceholder": "Select connection type",
+          "submitButton": "Generate",
+          "successMessage": "Ingress stream created",
+          "errorMessage": "Error creating ingress stream"
+        }
+      },
+      "chat": {
+        "header": {
+          "heading": "Chat Settings",
+          "description": "Here you can manage your chat settings."
+        },
+        "isChatEnabled": {
+          "heading": "Enable Chat",
+          "description": "If you enable chat, viewers will be able to write messages during your stream."
+        },
+        "isChatFollowersOnly": {
+          "heading": "Followers-only Chat",
+          "description": "If you enable this setting, only your followers will be able to write messages in the chat."
+        },
+        "isChatPremiumFollowersOnly": {
+          "heading": "Premium Followers-only Chat",
+          "description": "If you enable this setting, only premium followers will be able to write messages in the chat."
+        },
+        "successMessage": "Chat settings updated successfully",
+        "errorMessage": "Error updating chat settings"
+      },
+      "followers": {
+        "header": {
+            "heading": "Followers",
+            "description": "Here is a list of all your followers."
+        },
+        "columns": {
+            "date": "Date",
+            "user": "User",
+            "actions": "Actions",
+            "viewChannel": "View channel"
+        }
+      },
+      "sponsors": {
+        "header": {
+          "heading": "Sponsors",
+          "description": "Here is a list of all your sponsors."
+        },
+        "columns": {
+          "date": "Expiry Date",
+          "user": "User",
+          "plan": "Plan",
+          "actions": "Actions",
+          "viewChannel": "Go to channel"
+        }
+      },
+      "plans": {
+      "header": {
+        "heading": "Premium Plans",
+        "description": "Here is the list of premium plans for your channel."
+      },
+      "alert": {
+        "heading": "Channel Verification Required",
+        "description": "To create premium plans, your channel must be verified. You only need 10 subscribers to get a checkmark and unlock access to this feature."
+      },
+      "createForm": {
+        "trigger": "Create Plan",
+        "heading": "Create Plan",
+        "titleLabel": "Title",
+        "titlePlaceholder": "Premium channel subscription",
+        "titleDescription": "Enter the name of your plan. This name will be displayed to your subscribers.",
+        "descriptionLabel": "Description",
+        "descriptionPlaceholder": "Describe what your plan includes",
+        "descriptionDescription": "Describe what your plan includes. This will help your subscribers understand the benefits of the subscription.",
+        "priceLabel": "Price",
+        "priceDescription": "Specify the price of your plan in currency. This is the amount users will pay for the subscription.",
+        "submitButton": "Create",
+        "successMessage": "Premium plan created",
+        "errorMessage": "Error creating plan"
+      },
+      "columns": {
+        "date": "Date Created",
+        "title": "User",
+        "price": "Price",
+        "actions": "Actions",
+        "remove": "Delete",
+        "successMessage": "Plan successfully deleted",
+        "removeMessage": "Error deleting plan"
+      }
+    },
+    "transactions": {
+      "header": {
+        "heading": "Transactions",
+        "description": "Transactions related to channel memberships are displayed here."
+      },
+      "columns": {
+        "date": "Creation date",
+        "status": "Status",
+        "success": "Success",
+        "pending": "Pending",
+        "failed": "Failed",
+        "expired": "Expired",
+        "amount": "Amount"
+      }
+    }
+  },
+  "components": {
+    "liveBadge": {
+      "text": "LIVE"
+    },
+    "confirmModal": {
+      "cancel": "Cancel",
+      "continue": "Continue"
+    },
+    "copyButton": {
+      "successMessage": "Copied"
+    },
+    "dataTable": {
+      "notFound": "No results found"
+    },
+    "emptyState": {
+      "heading": "No results found",
+      "text": "We've searched every corner of our website, but unfortunately, we couldn't find anything matching your request. Why not try something else?"
+    }
+  },
+  "utils": {
+    "formatDate": {
+      "months": {
+        "january": "January",
+        "february": "February",
+        "march": "March",
+        "april": "April",
+        "may": "May",
+        "june": "June",
+        "july": "July",
+        "august": "August",
+        "september": "September",
+        "october": "October",
+        "november": "November",
+        "december": "December"
+      }
+    }
+  }
+}

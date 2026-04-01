@@ -1,0 +1,4 @@
+mutation ChangeProfileAvatar($avatar: Upload!) {
+    changeProfileAvatar(avatar: $avatar)
+}
+
