@@ -10,69 +10,40 @@ import { StreamPlayer } from "./StreamPlayer"
 import { Skeleton } from "@/src/components/ui/common/Skeleton"
 
 interface StreamVideoProps {
-    channel: FindChannelByUsernameQuery['findChannelByUsername']
+  channel: FindChannelByUsernameQuery['findChannelByUsername']
 }
 
 export function StreamVideo({ channel }: StreamVideoProps) {
-    const connectionState = useConnectionState()
-    const participant = useRemoteParticipant(channel.id)
+  const connectionState = useConnectionState()
+  const participant = useRemoteParticipant(channel.id)
 
-    // 🔥 ЛОГ ДЛЯ ОТЛАДКИ
-    console.log('🔴 StreamVideo DEBUG:', {
-        'channel.id': channel.id,
-        'participant': participant,
-        'participant?.identity': participant?.identity,
-        'connectionState': connectionState,
-        'isConnected': connectionState === ConnectionState.Connected
-    })
+  const allTracks = useTracks([Track.Source.Camera, Track.Source.Microphone])
+  const tracks = useMemo(() => {
+    return allTracks.filter(track => track.participant.identity === channel.id)
+  }, [allTracks, channel.id])
 
-    const allTracks = useTracks([
-        Track.Source.Camera,
-        Track.Source.Microphone
-    ])
+  let content: JSX.Element
 
-    console.log('🔴 StreamVideo allTracks:', allTracks.map(t => ({
-        identity: t.participant.identity,
-        source: t.source,
-        kind: t.publication.track?.kind
-    })))
+  // ✅ ИСПРАВЛЕННАЯ ЛОГИКА: сначала проверяем подключение, потом наличие участника
+  if (connectionState === ConnectionState.Connecting) {
+    content = <LoadingStream />
+  } else if (!participant || tracks.length === 0) {
+    content = <OfflineStream channel={channel} />
+  } else {
+    content = <StreamPlayer participant={participant} tracks={tracks} />
+  }
 
-    const tracks = useMemo(() => {
-        const filtered = allTracks.filter(
-            track => track.participant.identity === channel.id
-        )
-        console.log('🔴 StreamVideo filtered tracks:', filtered.length)
-        return filtered
-    }, [allTracks, channel.id])
-
-    let content: JSX.Element
-
-    if (!participant && connectionState === ConnectionState.Connected) {
-        content = <OfflineStream channel={channel} />
-    }
-    else if (!participant || tracks.length === 0) {
-        content = <LoadingStream />
-    }
-    else {
-        content = (
-            <StreamPlayer 
-                participant={participant}
-                tracks={tracks}
-            />
-        )
-    }
-
-    return (
-        <div className="group relative mb-6 aspect-video rounded-lg overflow-hidden">
-            {content}
-        </div>
-    )
+  return (
+    <div className="group relative mb-6 aspect-video rounded-lg overflow-hidden">
+      {content}
+    </div>
+  )
 }
 
 export function StreamVideoSkeleton() {
-    return (
-        <div className="mb-6 aspect-video">
-            <Skeleton className="h-full w-full rounded-lg" />
-        </div>
-    )
+  return (
+    <div className="mb-6 aspect-video">
+      <Skeleton className="h-full w-full rounded-lg" />
+    </div>
+  )
 }
