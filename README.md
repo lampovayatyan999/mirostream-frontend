@@ -71,13 +71,6 @@ mirostream-frontend/
 
 
 
-![Home Page Screenshot](public/assets/screenshots/home.png)
-
-**Live Stream with Chat**
-![Stream Page Screenshot](public/assets/screenshots/stream.png)
-
-**Channel Info**
-![Channel Info Screenshot](public/assets/screenshots/channel_info.png)
 
 ---
 
