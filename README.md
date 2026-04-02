@@ -173,17 +173,6 @@ mirostream-frontend/
 
 <img width="1178" height="904" alt="Снимок экрана 2026-04-01 084601" src="https://github.com/user-attachments/assets/e9eeafb4-424a-4288-b64f-791fd3213ef3" />
 
-<img width="1667" height="909" alt="Снимок экрана 2026-03-31 185210" src="https://github.com/user-attachments/assets/e231740f-3c44-44e1-9913-4f15f373c025" />
-
-
-**ホーム / ストリーム一覧**
-![Home Page Screenshot](public/assets/screenshots/home.png)
-
-**ライブストリーム + チャット**
-![Stream Page Screenshot](public/assets/screenshots/stream.png)
-
-**チャンネル情報**
-![Channel Info Screenshot](public/assets/screenshots/channel_info.png)
 
 ---
 
