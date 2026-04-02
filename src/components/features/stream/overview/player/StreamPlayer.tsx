@@ -93,17 +93,9 @@ export function StreamPlayer({ participant, tracks }: StreamPlayerProps) {
             />
 
             {/* UI overlay */}
-            <div className="absolute top-0 h-full w-full opacity-0 hover:opacity-100 transition-opacity bg-linear-to-t from-black/40 via-transparent to-transparent">
-                <VolumeControl
-                    value={volume}
-                    onChange={onVolumeChange}
-                    onToggle={toggleMute}
-                />
-
-                <FullScreenControl
-                    isFullScreen={isFullScreen}
-                    onToggle={toggleFullScreen}
-                />
+            <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity bg-linear-to-t from-black/40 via-transparent to-transparent flex items-end justify-between p-4">
+                <VolumeControl value={volume} onChange={onVolumeChange} onToggle={toggleMute} />
+                <FullScreenControl isFullScreen={isFullScreen} onToggle={toggleFullScreen} />
             </div>
         </div>
     )

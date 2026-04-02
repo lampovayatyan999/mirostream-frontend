@@ -100,59 +100,58 @@
       "share": {
         "heading": "Share via"
       }
+    },
+    "settings": {
+      "heading": "Stream Settings",
+      "thumbnail": {
+        "updateButton": "Update Image",
+        "confirmModal": {
+          "heading": "Delete Stream Thumbnail",
+          "message": "Are you sure you want to delete the stream thumbnail? This action cannot be undone."
+        },
+        "info": "Supported formats: JPG, JPEG, PNG, or GIF. Max size: 10 MB.",
+        "successUpdateMessage": "Stream image updated successfully",
+        "errorUpdateMessage": "Error updating stream image",
+        "successRemoveMessage": "Stream image removed successfully",
+        "errorRemoveMessage": "Error removing stream image"
+      },
+      "info": {
+        "titleLabel": "Title",
+        "titlePlaceholder": "GTA 5 Stream",
+        "titleDescription": "Enter a title for your stream. It should be short and catchy.",
+        "categoryLabel": "Category",
+        "categoryPlaceholder": "Select a category",
+        "categoryDescription": "Select the category that matches your content. This helps viewers find your stream more easily.",
+        "submitButton": "Save Changes",
+        "successMessage": "Stream settings updated successfully",
+        "errorMessage": "Error updating stream settings"
+      }
+    },
+    "chat": {
+      "heading": "Chat",
+      "unavailable": "Chat unavailable",
+      "unavailableMessage": "Chat is unavailable while the channel is offline. Please check back later!",
+      "loading": "Connecting...",
+      "info": {
+        "authRequired": "Authorization required",
+        "chatDisabled": "Chat disabled",
+        "premiumFollowersOnly": "Sponsors only",
+        "followersOnly": "Followers only"
+      },
+      "sendMessage": {
+        "placeholder": "Send a message",
+        "emojiPlaceholder": "Search",
+        "errorMessage": "Error sending message"
+      }
     }
   },
-
   "aboutChannel": {
     "heading": "About",
     "followersCount": "followers",
     "noDescription": "No description provided"
   },
-  "chat": {
-    "heading": "Chat",
-    "unavailable": "Chat unavailable",
-    "unavailableMessage": "Chat is unavailable while the channel is offline. Please check back later!",
-    "loading": "Connecting...",
-    "info": {
-      "authRequired": "Authorization required",
-      "chatDisabled": "Chat disabled",
-      "premiumFollowersOnly": "Sponsors only",
-      "followersOnly": "Followers only"
-    },
-    "sendMessage": {
-      "placeholder": "Send a message",
-      "emojiPlaceholder": "Search",
-      "errorMessage": "Error sending message"
-    }
-  },
-  "settings": {
-    "heading": "Stream Settings",
-    "thumbnail": {
-      "updateButton": "Update Image",
-      "confirmModal": {
-        "heading": "Delete Stream Thumbnail",
-        "message": "Are you sure you want to delete the stream thumbnail? This action cannot be undone."
-      },
-      "info": "Supported formats: JPG, JPEG, PNG, or GIF. Max size: 10 MB.",
-      "successUpdateMessage": "Stream image updated successfully",
-      "errorUpdateMessage": "Error updating stream image",
-      "successRemoveMessage": "Stream image removed successfully",
-      "errorRemoveMessage": "Error removing stream image"
-    },
-    "info": {
-      "titleLabel": "Title",
-      "titlePlaceholder": "GTA 5 Stream",
-      "titleDescription": "Enter a title for your stream. It should be short and catchy.",
-      "categoryLabel": "Category",
-      "categoryPlaceholder": "Select a category",
-      "categoryDescription": "Select the category that matches your content. This helps viewers find your stream more easily.",
-      "submitButton": "Save Changes",
-      "successMessage": "Stream settings updated successfully",
-      "errorMessage": "Error updating stream settings"
-    }
-  },
   "success": {
-    "heading": "Payment completed!",
+    "heading": "Payment successful!",
     "details": {
       "heading": "Sponsorship details:",
       "price": "Price:",
@@ -160,8 +159,8 @@
       "channel": "Channel:"
     },
     "congratulations": "You now have access to the channel's premium content!",
-    "backToHome": "Back to Home",
-    "backToChannel": "Back to Channel",
+    "backToHome": "Back to home",
+    "backToChannel": "Back to channel",
     "support": "If you have any questions, please contact support."
   },
   "notFound": {
@@ -482,53 +481,53 @@
           "successMessage": "Ingress stream created",
           "errorMessage": "Error creating ingress stream"
         }
+    },
+    "chat": {
+      "header": {
+        "heading": "Chat Settings",
+        "description": "Here you can manage your chat settings."
       },
-      "chat": {
-        "header": {
-          "heading": "Chat Settings",
-          "description": "Here you can manage your chat settings."
-        },
-        "isChatEnabled": {
-          "heading": "Enable Chat",
-          "description": "If you enable chat, viewers will be able to write messages during your stream."
-        },
-        "isChatFollowersOnly": {
-          "heading": "Followers-only Chat",
-          "description": "If you enable this setting, only your followers will be able to write messages in the chat."
-        },
-        "isChatPremiumFollowersOnly": {
-          "heading": "Premium Followers-only Chat",
-          "description": "If you enable this setting, only premium followers will be able to write messages in the chat."
-        },
-        "successMessage": "Chat settings updated successfully",
-        "errorMessage": "Error updating chat settings"
+      "isChatEnabled": {
+        "heading": "Enable Chat",
+        "description": "If you enable chat, viewers will be able to write messages during your stream."
       },
-      "followers": {
-        "header": {
-            "heading": "Followers",
-            "description": "Here is a list of all your followers."
-        },
-        "columns": {
-            "date": "Date",
-            "user": "User",
-            "actions": "Actions",
-            "viewChannel": "View channel"
-        }
+      "isChatFollowersOnly": {
+        "heading": "Followers-only Chat",
+        "description": "If you enable this setting, only your followers will be able to write messages in the chat."
       },
-      "sponsors": {
-        "header": {
-          "heading": "Sponsors",
-          "description": "Here is a list of all your sponsors."
-        },
-        "columns": {
-          "date": "Expiry Date",
+      "isChatPremiumFollowersOnly": {
+        "heading": "Premium Followers-only Chat",
+        "description": "If you enable this setting, only premium followers will be able to write messages in the chat."
+      },
+      "successMessage": "Chat settings updated successfully",
+      "errorMessage": "Error updating chat settings"
+    },
+    "followers": {
+      "header": {
+          "heading": "Followers",
+          "description": "Here is a list of all your followers."
+      },
+      "columns": {
+          "date": "Date",
           "user": "User",
-          "plan": "Plan",
           "actions": "Actions",
-          "viewChannel": "Go to channel"
-        }
+          "viewChannel": "View channel"
+      }
+    },
+    "sponsors": {
+      "header": {
+        "heading": "Sponsors",
+        "description": "Here is a list of all your sponsors."
       },
-      "plans": {
+      "columns": {
+        "date": "Expiry Date",
+        "user": "User",
+        "plan": "Plan",
+        "actions": "Actions",
+        "viewChannel": "Go to channel"
+      }
+    },
+    "plans": {
       "header": {
         "heading": "Premium Plans",
         "description": "Here is the list of premium plans for your channel."

@@ -1,3 +1,5 @@
+'use client'
+
 import { FindChannelByUsernameQuery } from "@/src/graphql/generated/output"
 import { useConnectionState, useRemoteParticipant, useTracks } from "@livekit/components-react"
 import { ConnectionState, Track } from "livekit-client"
@@ -15,30 +17,42 @@ export function StreamVideo({ channel }: StreamVideoProps) {
     const connectionState = useConnectionState()
     const participant = useRemoteParticipant(channel.id)
 
-    // ✅ Получаем ВСЕ треки один раз
+    // 🔥 ЛОГ ДЛЯ ОТЛАДКИ
+    console.log('🔴 StreamVideo DEBUG:', {
+        'channel.id': channel.id,
+        'participant': participant,
+        'participant?.identity': participant?.identity,
+        'connectionState': connectionState,
+        'isConnected': connectionState === ConnectionState.Connected
+    })
+
     const allTracks = useTracks([
         Track.Source.Camera,
         Track.Source.Microphone
     ])
 
-    // ✅ Фильтруем только нужного участника (мемоизация чтобы не триггерить ререндеры)
+    console.log('🔴 StreamVideo allTracks:', allTracks.map(t => ({
+        identity: t.participant.identity,
+        source: t.source,
+        kind: t.publication.track?.kind
+    })))
+
     const tracks = useMemo(() => {
-        return allTracks.filter(
+        const filtered = allTracks.filter(
             track => track.participant.identity === channel.id
         )
+        console.log('🔴 StreamVideo filtered tracks:', filtered.length)
+        return filtered
     }, [allTracks, channel.id])
 
     let content: JSX.Element
 
-    // ✅ Уже подключены, но стримера нет → оффлайн
     if (!participant && connectionState === ConnectionState.Connected) {
         content = <OfflineStream channel={channel} />
     }
-    // ⏳ Ещё грузится или нет треков
     else if (!participant || tracks.length === 0) {
         content = <LoadingStream />
     }
-    // ✅ Всё ок — передаём данные вниз
     else {
         content = (
             <StreamPlayer 

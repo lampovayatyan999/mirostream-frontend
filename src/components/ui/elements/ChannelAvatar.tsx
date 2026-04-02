@@ -27,7 +27,7 @@ interface ChannelAvatarProps extends VariantProps<typeof avatarSizes> {
 }
 
 export function ChannelAvatar({ size, channel, isLive }: ChannelAvatarProps) {
-    const rawPath = channel.avatar
+    const rawPath = channel?.avatar
 
     const avatarSrc = useMemo(() => {
         if (!rawPath) return undefined
@@ -41,6 +41,7 @@ export function ChannelAvatar({ size, channel, isLive }: ChannelAvatarProps) {
         
         return source.includes('v=') ? source : `${source}${separator}v=${Date.now()}`
     }, [rawPath])
+    if (!channel) return null
 
     return (
         <div className="relative">

@@ -73,80 +73,50 @@
       "viewers": "視聴者",
       "offline": "オフライン"
     },
-  "actions": {
-    "follow": {
-      "confirmUnfollowHeading": "フォロー解除",
-      "confirmUnfollowMessage": "このチャンネルからの通知は届かなくなり、フォローリストから削除されます",
-      "unfollowButton": "フォロー解除",
-      "followButton": "フォローする",
-      "successFollowMessage": "フォローに成功しました",
-      "errorFollowMessage": "フォロー中にエラーが発生しました",
-      "successUnfollowMessage": "フォロー解除に成功しました",
-      "errorUnfollowMessage": "フォロー解除中にエラーが発生しました"
+    "actions": {
+      "follow": {
+        "confirmUnfollowHeading": "フォロー解除",
+        "confirmUnfollowMessage": "このチャンネルからの通知は届かなくなり、フォローリストから削除されます",
+        "unfollowButton": "フォロー解除",
+        "followButton": "フォローする",
+        "successFollowMessage": "フォローに成功しました",
+        "errorFollowMessage": "フォロー中にエラーが発生しました",
+        "successUnfollowMessage": "フォロー解除に成功しました",
+        "errorUnfollowMessage": "フォロー解除中にエラーが発生しました"
+      },
+      "support": {
+        "alreadySponsor": "あなたはすでにスポンサーです",
+        "supportAuthor": "作者を支援する",
+        "perMonth": "/ 月",
+        "choose": "選択する",
+        "errorMessage": "支払い作成中にエラーが発生しました"
+      },
+      "share": {
+        "heading": "共有方法"
+      }
     },
-    "support": {
-      "alreadySponsor": "あなたはすでにスポンサーです",
-      "supportAuthor": "作者を支援する",
-      "perMonth": "/ 月",
-      "choose": "選択する",
-      "errorMessage": "支払い作成中にエラーが発生しました"
-    },
-    "share": {
-      "heading": "共有方法"
+    "chat": {
+      "heading": "チャット",
+      "unavailable": "チャットは利用できません",
+      "unavailableMessage": "オフライン中はチャットを利用できません。後で再度ご確認ください。",
+      "loading": "接続中...",
+      "info": {
+        "authRequired": "認証が必要です",
+        "chatDisabled": "チャットは無効です",
+        "premiumFollowersOnly": "スポンサー限定",
+        "followersOnly": "フォロワー限定"
+      },
+      "sendMessage": {
+        "placeholder": "メッセージを送信",
+        "emojiPlaceholder": "検索",
+        "errorMessage": "メッセージ送信中にエラーが発生しました"
+      }
     }
-  }
   },
   "aboutChannel": {
     "heading": "詳細情報",
     "followersCount": "フォロワー",
     "noDescription": "説明はありません"
-  },
-  "chat": {
-    "heading": "チャット",
-    "unavailable": "チャットは利用できません",
-    "unavailableMessage": "オフライン中はチャットを利用できません。後で再度ご確認ください。",
-    "loading": "接続中...",
-    "info": {
-      "authRequired": "認証が必要です",
-      "chatDisabled": "チャットは無効です",
-      "premiumFollowersOnly": "スポンサー限定",
-      "followersOnly": "フォロワー限定"
-    },
-    "sendMessage": {
-      "placeholder": "メッセージを送信",
-      "emojiPlaceholder": "検索",
-      "errorMessage": "メッセージ送信中にエラーが発生しました"
-    }
-  },
-  "settings": {
-    "heading": "配信設定",
-    "thumbnail": {
-      "updateButton": "画像を更新",
-      "confirmModal": {
-        "heading": "配信サムネイルの削除",
-        "message": "配信サムネイルを削除してもよろしいですか？この操作は取り消せません。"
-      },
-      "info": "対応形式：JPG、JPEG、PNG、GIF。最大サイズ：10 MB",
-      "successUpdateMessage": "配信画像が更新されました",
-      "errorUpdateMessage": "配信画像の更新中にエラーが発生しました",
-      "successRemoveMessage": "配信画像が削除されました",
-      "errorRemoveMessage": "配信画像の削除中にエラーが発生しました"
-    },
-    "info": {
-      "titleLabel": "タイトル",
-      "titlePlaceholder": "GTA5 配信",
-      "titleDescription": "配信のタイトルを入力してください。短くて覚えやすいものが最適です。",
-      "categoryLabel": "カテゴリー",
-      "categoryPlaceholder": "カテゴリーを選択",
-      "categoryDescription": "コンテンツに合ったカテゴリーを選択してください。視聴者があなたの配信を見つけやすくなります。",
-      "submitButton": "変更を保存",
-      "successMessage": "配信設定が更新されました",
-      "errorMessage": "配信設定の更新中にエラーが発生しました"
-    }
-  },
-  "notFound": {
-    "description": "おっと、何かがうまくいかなかったようです。",
-    "backToHome": "ホームに戻る"
   },
   "success": {
     "heading": "お支払いが完了しました！",
@@ -160,6 +130,10 @@
     "backToHome": "ホームに戻る",
     "backToChannel": "チャンネルに戻る",
     "support": "ご不明な点がございましたら、サポートまでお問い合わせください。"
+  },
+  "notFound": {
+    "description": "おっと、何かがうまくいかなかったようです。",
+    "backToHome": "ホームに戻る"
   },
   "auth": {
     "register": {
@@ -483,15 +457,15 @@
       },
       "isChatEnabled": {
         "heading": "チャットを有効にする",
-        "description": "チャットを有効にすると、配信中に視聴者がメッセージを送信できるようになります。"
+        "description": "チャットを有効にすると、視聴者は配信中にメッセージを送信できるようになります。"
       },
       "isChatFollowersOnly": {
-        "heading": "フォロワー限定チャット",
-        "description": "この設定を有効にすると、フォロワーのみがチャットでメッセージを送信できるようになります。"
+        "heading": "フォロワーのみチャット",
+        "description": "この設定を有効にすると、あなたのフォロワーのみがチャットにメッセージを送信できるようになります。"
       },
       "isChatPremiumFollowersOnly": {
-        "heading": "プレミアムフォロワー限定チャット",
-        "description": "この設定を有効にすると、プレミアムフォロワーのみがチャットでメッセージを送信できるようになります。"
+        "heading": "プレミアムフォロワーのみチャット",
+        "description": "この設定を有効にすると、プレミアムフォロワーのみがチャットにメッセージを送信できるようになります。"
       },
       "successMessage": "チャット設定が正常に更新されました",
       "errorMessage": "チャット設定の更新中にエラーが発生しました"

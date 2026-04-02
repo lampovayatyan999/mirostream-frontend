@@ -1,69 +1,57 @@
-'use client'
+'use client';
 
-import type { FindChannelByUsernameQuery } from "@/src/graphql/generated/output"
-import { ChannelAvatar } from "@/src/components/ui/elements/ChannelAvatar"
-import { ChannelVerified } from "@/src/components/ui/elements/ChannelVerified"
-import { User } from "lucide-react"
-import { useTranslations } from "next-intl"
-import { StreamActions } from "./StreamActions"
-import { useParticipants } from "@livekit/components-react"
-import { Skeleton } from "@/src/components/ui/common/Skeleton"
+import { Pencil } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-interface StreamInfoProps {
-    channel: FindChannelByUsernameQuery['findChannelByUsername']
+import { Button } from "@/src/components/ui/common/Button";
+import { 
+  Dialog, 
+  DialogContent, 
+  DialogHeader, 
+  DialogTitle, 
+  DialogTrigger 
+} from "@/src/components/ui/common/Dialog";
+import { Skeleton } from "@/src/components/ui/common/Skeleton";
+import type { FindChannelByUsernameQuery } from "@/src/graphql/generated/output";
+import { useCurrent } from "@/src/hooks/useCurrent";
+import { ChangeStreamThumbnailForm } from "../../settings/ChangeStreamThumbnailForm";
+import { ChangeStreamInfoForm } from "../../settings/ChangeStreamInfo";
+interface StreamSettingsProps {
+    channel: FindChannelByUsernameQuery["findChannelByUsername"] 
 }
 
-export function StreamInfo({ channel }: StreamInfoProps) {
-    const t = useTranslations('stream.info')
+export function StreamInfo({ channel }: StreamSettingsProps) {
+    const t = useTranslations('stream.settings');
+    const { user } = useCurrent();
 
-    const participants = channel?.stream?.isLive ? useParticipants() : []
-    const participantCount = participants.length > 0 ? participants.length - 1 : 0
+    const isOwnerChannel = user?.id === channel.id;
 
-    if (!channel || !channel.id) return null
-
+    if (!isOwnerChannel) {
+        return null;
+    }
+    
     return (
-        <div className="space-y-5">
-            <h1 className="text-xl font-semibold">
-                {channel.stream?.title} {channel.stream?.category && ` | ${channel.stream.category.title}`}
-            </h1>
-            <div className="flex flex-col items-start justify-between lg:flex-row">
-                <div className="flex items-center gap-x-3 px-1">
-                    <ChannelAvatar channel={channel} isLive={channel.stream?.isLive} size='lg' />
-                    <div className="space-y-1">
-                        <h2 className="flex items-center gap-x-2 text-lg font-semibold">
-                            {channel.displayName}
-                            {channel.isVerified && <ChannelVerified />}
-                        </h2>
-                        {channel.stream?.isLive ? (
-                            <div className="flex items-center gap-x-1 text-xs font-semibold text-rose-500">
-                                <User className="size-4" />
-                                {participantCount} {t('viewers')}
-                            </div>
-                        ) : (
-                            <p className="text-xs font-semibold text-muted-foreground">{t('offline')}</p>
-                        )}
-                    </div>
+        <Dialog>
+            <DialogTrigger asChild>
+                <Button variant="ghost" size="lgIcon">
+                    <Pencil className="size-5" />
+                </Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-106.25">
+                <DialogHeader>
+                    <DialogTitle>{t('heading')}</DialogTitle>
+                </DialogHeader>
+                <div className="space-y-8 py-4">
+                    <ChangeStreamThumbnailForm stream={channel.stream} />
+                    <ChangeStreamInfoForm stream={channel.stream} />
                 </div>
-            </div>
-            <StreamActions channel={channel} />
-        </div>
-    )
+            </DialogContent>
+        </Dialog>
+    );
 }
 
 export function StreamInfoSkeleton() {
     return (
-        <div className="space-y-5">
-            <Skeleton className="h-7 w-[60%]" />
-            <div className="flex flex-col items-start justify-between lg:flex-row">
-                <div className="flex items-center gap-x-3 px-1">
-                    <Skeleton className="size-14 rounded-full" />
-                    <div className="space-y-2.5">
-                        <div className="flex items-center gap-x-2">
-                            <Skeleton />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+        <Skeleton className="size-10 rounded-md" />
+    );
 }

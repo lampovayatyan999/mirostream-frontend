@@ -12,13 +12,13 @@ interface LiveChatProps {
     isChatEnabled: boolean
     isChatFollowersOnly: boolean
     isChatPremiumFollowersOnly: boolean
+    isRoomConnected: boolean
 }
 
 export function LiveChat(props: LiveChatProps) {
     const t = useTranslations('chat')
     const isLive = props.channel.stream?.isLive
 
-    // ❌ OFFLINE → не используем LiveKit хуки
     if (!isLive) {
         return (
             <Card className="flex h-[82%] w-full flex-col items-center justify-center lg:fixed lg:w-[21.5%]">
@@ -28,7 +28,14 @@ export function LiveChat(props: LiveChatProps) {
         )
     }
 
-    // ✅ ONLINE → передаём управление компоненту с LiveKit
+    if (!props.isRoomConnected) {
+        return (
+            <Card className="flex h-[82%] w-full flex-col items-center justify-center lg:fixed lg:w-[21.5%]">
+                <div className="text-muted-foreground">Подключение к чату...</div>
+            </Card>
+        )
+    }
+
     return <LiveChatInner {...props} />
 }
 

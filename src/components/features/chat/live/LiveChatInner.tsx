@@ -29,36 +29,29 @@ export function LiveChatInner({
     const t = useTranslations('stream.chat')
     const { isAuthenticated } = useAuth()
     const { user, isLoadingProfile } = useCurrent()
-    
 
-    // 📡 Данные — с проверкой channel.id
+    // Данные
     const { data: followingsData, loading: isLoadingFollowings } = useFindMyFollowingsQuery({
         skip: !isAuthenticated
     })
     const followings = followingsData?.findMyFollowings ?? []
 
-    // 🔥 ФИКС: проверяем channel.id перед запросом
     const shouldSkipSponsors = !channel?.id
-
     const { data: sponsorsData, loading: isLoadingSponsors } = useFindSponsorsByChannelQuery({
-        variables: shouldSkipSponsors ? undefined : {
-            channelId: channel.id
-        },
+        variables: shouldSkipSponsors ? undefined : { channelId: channel.id },
         skip: shouldSkipSponsors
     })
     const sponsors = sponsorsData?.findSponsorsByChannel ?? []
 
-    // 👤 Роли
     const isOwnerChannel = user?.id === channel.id
     const isFollower = followings.some(f => f.following.id === channel.id)
     const isSponsor = user ? sponsors.some(s => s.user.id === user.id) : false
 
-    // 🔥 LiveKit хуки
+    // LiveKit хуки (теперь безопасны, так как вызваны только когда есть контекст)
     const connectionState = useConnectionState()
     const participant = useRemoteParticipant(channel.id)
     const isOnline = !!participant && connectionState === ConnectionState.Connected
 
-    // 🚫 Ограничения
     const isDisabled =
         !isOnline ||
         !isAuthenticated ||
@@ -66,12 +59,9 @@ export function LiveChatInner({
         (isChatFollowersOnly && !isFollower && !isOwnerChannel) ||
         (isChatPremiumFollowersOnly && !isSponsor && !isOwnerChannel)
 
-    // ⏳ Загрузка
     if (connectionState === ConnectionState.Connecting || isLoadingProfile || isLoadingFollowings || isLoadingSponsors) {
         return <LoadingChat />
     }
-
-    
 
     return (
         <Card className="flex h-[82%] w-full flex-col overflow-y-auto lg:fixed lg:w-[21.5%] xl:mt-0">

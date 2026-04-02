@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from "@/src/components/ui/common/Button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/src/components/ui/common/Dialog";
 import type { FindChannelByUsernameQuery } from "@/src/graphql/generated/output";
@@ -21,6 +23,7 @@ export function StreamSettings({channel}: StreamSettingsProps) {
     if(!isOwnerChannel) {
         return null
     }
+    
   return (
     <Dialog>
         <DialogTrigger asChild>
