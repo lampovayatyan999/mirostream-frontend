@@ -34,23 +34,23 @@ mirostream-frontend/
 └─ README.md
 ```
 
-*(based on GitHub repo structure)* ([GitHub][1])
+
 
 ---
 
 ## 🧩 Core Features
 
 * **Live Streaming Interface**
-  Custom video player with live playback. ([GitHub][1])
+  Custom video player with live playback.
 
 * **Channel & Stream Pages**
-  Dynamic routes for different channels and streams. ([GitHub][1])
+  Dynamic routes for different channels and streams. 
 
 * **Real‑time Chat**
-  Chat component tailored for live interactions. ([GitHub][1])
+  Chat component tailored for live interactions. 
 
 * **Responsive UI**
-  Works on mobile and desktop. ([GitHub][1])
+  Works on mobile and desktop. 
 
 ---
 
@@ -60,7 +60,7 @@ mirostream-frontend/
 * **Language:** TypeScript
 * **Styling:** CSS/Tailwind CSS (if included)
 * **Rendering:** SSR/Static where appropriate
-* **Data Fetching:** Server Components + Client Interactions ([GitHub][1])
+* **Data Fetching:** Server Components + Client Interactions 
 
 ---
 
